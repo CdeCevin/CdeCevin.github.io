@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kevin Olivares · Portafolio</title>
+<meta name="description" content="Portafolio de Kevin Olivares Fuentes, Ingeniero Civil Informático, Full-Stack & AI Product Builder: plataformas en producción, automatización e integración de IA.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Kevin Olivares</a>
+  <nav>
+    <a href="#produccion">En producción</a>
+    <a href="#destacados">Destacados</a>
+    <a href="#proyectos">Otros</a>
+    <a href="#perfil">Perfil</a>
+    <a href="#contacto">Contacto</a>
+    <button id="theme" class="theme" aria-label="Cambiar tema">◐</button>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <p class="eyebrow">Kevin Olivares Fuentes · Ingeniero Civil Informático · Full-Stack & AI Product Builder</p>
+    <h1>Ingeniería de software pragmática: de la idea a producción, en cualquier plataforma.</h1>
+    <p class="lead">Desarrollo software desde el backend hasta la interfaz, con foco en sistemas confiables e IA bien integrada. Me gusta entender cada problema, aprender lo que haga falta y construir soluciones que hablen por sí solas.</p>
+    <div class="cta">
+      <a class="btn primary" href="#produccion">Ver proyectos</a>
+      <a class="btn" href="https://www.linkedin.com/in/kevinolivaresfuentes/" target="_blank" rel="noopener">LinkedIn →</a>
+      <a class="btn" href="https://github.com/CdeCevin" target="_blank" rel="noopener">GitHub →</a>
+    </div>
+    <ul class="stack" aria-label="Tecnologías">
+      <li>Python</li><li>JavaScript</li><li>TypeScript</li><li>HTML / CSS</li><li>C / C++</li><li>Java</li>
+      <li>Node.js</li><li>Express</li><li>Flask</li><li>FastAPI</li><li>Selenium</li>
+      <li>React</li><li>Vite</li><li>Tailwind CSS</li><li>React Native</li><li>Expo</li><li>Electron</li>
+      <li>Roku TV</li><li>BrightScript</li><li>Android</li><li>Windows</li><li>Arduino</li>
+      <li>SQLite</li><li>MariaDB</li><li>Gemini API</li><li>Docker</li><li>GitHub Actions</li>
+    </ul>
+  </section>
+
+  <section id="produccion">
+    <h2>Webs en producción</h2>
+
+    <article class="card featured">
+      <div class="card-head">
+        <div class="title"><img class="logo" src="img/caudalrio.png" alt="Logo de Caudal Río" width="48" height="48"><h3>Caudal Río</h3></div>
+        <span class="tag">Creador y desarrollador principal · 2026–actualidad</span>
+      </div>
+      <p>Plataforma pública de monitoreo de caudales en tiempo real para todo Chile (~1.800 estaciones de la DGA), pensada para la toma de decisiones ante crecidas.</p>
+      <ul class="points">
+        <li>Backend tolerante a caídas del portal estatal: scraping paralelo, caché adaptativa según el nivel de alerta y tres fuentes de respaldo (API REST, scraping y boletines PDF).</li>
+        <li>Historial propio de mediciones en SQLite, alertas Web Push con más de 160 dispositivos suscritos y una API REST para terceros, usada en producción por una app de pesca en La Araucanía.</li>
+        <li>Infraestructura completa (Railway, dominio, correo corporativo, soporte a usuarios) y más de 550 tests automatizados.</li>
+      </ul>
+      <p class="meta">Python · SQLite · Web Push · API REST · Railway</p>
+      <a class="link" href="https://caudalrio.cl/" target="_blank" rel="noopener">Visitar caudalrio.cl →</a>
+    </article>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-head">
+          <div class="title"><img class="logo" src="img/sasflix.png" alt="Logo de SASFlix" width="48" height="48"><h3>SASFlix</h3></div>
+          <span class="tag">Windows + Android</span>
+        </div>
+        <p>Anime, series, películas y mangas en una sola app para Windows, gratis y sin anuncios. Versión 2.3.0 con instalador que trae todo.</p>
+        <ul class="points">
+          <li>Continúa justo donde quedaste, en el minuto exacto, y el siguiente capítulo se prepara mientras ves el actual.</li>
+          <li>Subtítulos en español sincronizados con la voz, aunque el video venga solo en inglés.</li>
+          <li>Mangas y cómics en lectura continua, por página o a doble página; descargas offline y deportes en vivo.</li>
+          <li>Alejandría: app Android (v1.0.6) que busca dónde leer manga y recomienda la mejor fuente.</li>
+        </ul>
+        <div class="links">
+          <a class="link" href="https://sasflix.thesas.cl/#inicio" target="_blank" rel="noopener">Sitio →</a>
+          <a class="link" href="https://github.com/CdeCevin/SASFlix" target="_blank" rel="noopener">Repositorio →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div class="title"><img class="logo" src="img/thesas.ico" alt="Logo de Thesas" width="48" height="48"><h3>Thesas</h3></div>
+          <span class="tag">Herramientas web</span>
+        </div>
+        <p>Suite gratuita de utilidades en el navegador. Backend FastAPI en Hugging Face Spaces y frontend React + Vite en Vercel.</p>
+        <ul class="chips">
+          <li><a href="https://www.thesas.cl/#remover" target="_blank" rel="noopener">Quitar fondo</a></li>
+          <li><a href="https://www.thesas.cl/#pdf" target="_blank" rel="noopener">PDF</a></li>
+          <li><a href="https://www.thesas.cl/#meme" target="_blank" rel="noopener">Memes</a></li>
+          <li><a href="https://www.thesas.cl/#downloader" target="_blank" rel="noopener">Descargador</a></li>
+          <li><a href="https://www.thesas.cl/#video" target="_blank" rel="noopener">Video</a></li>
+        </ul>
+        <div class="links">
+          <a class="link" href="https://www.thesas.cl/" target="_blank" rel="noopener">Visitar thesas.cl →</a>
+          <a class="link" href="https://github.com/CdeCevin/SASGenerator" target="_blank" rel="noopener">Código →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="destacados">
+    <h2>Proyectos destacados</h2>
+
+    <article class="card featured">
+      <div class="card-head">
+        <h3>Plataforma de Simulación Contable Inteligente <small>UAPSCI</small></h3>
+        <span class="tag">Desarrollador backend · 2025–2026</span>
+      </div>
+      <p>Plataforma educativa de contabilidad con un motor determinista que califica con reglas verificables, eliminando las alucinaciones y la evaluación de caja negra de la IA, que queda limitada a redactar.</p>
+      <ul class="points">
+        <li>Backend y API REST en Node.js/Express con autenticación JWT, roles y MariaDB; integración de Google Gemini con control de concurrencia y respaldo automático entre claves y modelos.</li>
+        <li>Evolución v2.0: sistema multiusuario con gestión de cursos y reportes para docentes, en producción, con pruebas end-to-end y de carga.</li>
+      </ul>
+      <p class="meta">Node.js · Express · MariaDB · JWT · Gemini · Repositorio privado</p>
+    </article>
+
+    <article class="card featured">
+      <div class="card-head">
+        <h3>SASFlix TV <small>Canal de Roku</small></h3>
+        <span class="tag">Televisión · Roku</span>
+      </div>
+      <p>Llevé SASFlix a la tele: un canal propio para Roku, escrito en BrightScript y SceneGraph, que muestra el catálogo y reproduce desde el televisor. Además armé un canal de TV abierta basado en listas .m3u.</p>
+      <ul class="points">
+        <li>Canal con tareas asíncronas para catálogo, descubrimiento de servidores en la red y subtítulos, más empaquetado automatizado.</li>
+        <li>Servidor en Python que gestiona el catálogo en Google Drive y la reproducción, desplegado como servicio en un notebook Linux.</li>
+      </ul>
+      <p class="meta">BrightScript · SceneGraph · Python · Google Drive · m3u · Repositorio privado</p>
+    </article>
+
+    <article class="card featured">
+      <div class="card-head">
+        <h3>LinkedinNotifier <small>Job Hunter Chile</small></h3>
+        <span class="tag">Automatización · IA</span>
+      </div>
+      <p>Buscador de ofertas de desarrollo en LinkedIn, Get on Board, Computrabajo y Chiletrabajos. Aplica filtros estáticos y usa Gemini solo para <em>extraer</em> datos de cada oferta; una función determinista decide si es match y envía un correo.</p>
+      <ul class="points">
+        <li>Filtra primero y evalúa después, con límite por ejecución, para no gastar cuota de IA.</li>
+        <li>Sin duplicados: la misma oferta en varias plataformas se evalúa una sola vez.</li>
+      </ul>
+      <p class="meta">Python · Gemini API · Scraping · Email</p>
+      <a class="link" href="https://github.com/CdeCevin/LinkedinNotifier" target="_blank" rel="noopener">Ver código →</a>
+    </article>
+
+    <article class="card featured">
+      <div class="card-head">
+        <h3>ucmNotifier</h3>
+        <span class="tag">Automatización · Dashboard</span>
+      </div>
+      <p>Inicia sesión en el portal SAP de la Universidad Católica del Maule, detecta notas nuevas o modificadas y avisa por correo. Incluye un dashboard con modo oscuro y gráficos de rendimiento.</p>
+      <ul class="points">
+        <li>Scraping con Selenium ejecutado cada hora con GitHub Actions.</li>
+        <li>Dashboard HTML/JS con Chart.js para buscar, filtrar y analizar ramos.</li>
+      </ul>
+      <p class="meta">Python · Selenium · Chart.js · GitHub Actions</p>
+      <a class="link" href="https://github.com/CdeCevin/ucmNotifier" target="_blank" rel="noopener">Ver código →</a>
+    </article>
+  </section>
+
+  <section id="proyectos">
+    <h2>Otros proyectos</h2>
+    <div class="grid three">
+      <article class="card small">
+        <h3>MiuApp</h3>
+        <p>App móvil para gestionar ramos universitarios, seguir notas y controlar aprobaciones.</p>
+        <p class="meta">TypeScript · React Native · Expo</p>
+        <a class="link" href="https://github.com/CdeCevin/MiuApp" target="_blank" rel="noopener">Código →</a>
+      </article>
+      <article class="card small">
+        <h3>vetSync</h3>
+        <p>Software para veterinarias: citas, inventario e IA integrada para predecir inventario y analizar mascotas a partir de su historial médico.</p>
+        <p class="meta">TypeScript · IA</p>
+        <a class="link" href="https://github.com/CdeCevin/vetSync" target="_blank" rel="noopener">Código →</a>
+      </article>
+      <article class="card small">
+        <h3>InfraDeck</h3>
+        <p>Controla Windows con un control remoto infrarrojo y Arduino, con interfaz en Electron para asignar botones.</p>
+        <p class="meta">Python · Arduino · Electron</p>
+        <a class="link" href="https://github.com/CdeCevin/InfraDeck" target="_blank" rel="noopener">Código →</a>
+      </article>
+      <article class="card small">
+        <h3>MacroPad</h3>
+        <p>Teclado de macros 4x4 con Arduino, daemon en Python y configurador visual en Electron.</p>
+        <p class="meta">Arduino · Python · Electron</p>
+        <a class="link" href="https://github.com/CdeCevin/MacroPad" target="_blank" rel="noopener">Código →</a>
+      </article>
+      <article class="card small">
+        <h3>OHsys</h3>
+        <p>Sistema POS y gestión de inventario para la pyme Outlet a tu Hogar.</p>
+        <p class="meta">JavaScript · React</p>
+        <a class="link" href="https://github.com/CdeCevin/OHsys" target="_blank" rel="noopener">Código →</a>
+      </article>
+      <article class="card small">
+        <h3>CofClothes</h3>
+        <p>Beta de una app que recomienda outfits según los gustos del usuario, con IA.</p>
+        <p class="meta">TypeScript · Expo · IA</p>
+        <a class="link" href="https://github.com/CdeCevin/CofClothesBeta" target="_blank" rel="noopener">Código →</a>
+      </article>
+      <article class="card small">
+        <h3>Sistemas Distribuidos</h3>
+        <p>Trabajo en C con uso eficiente de CPU mediante OpenMP.</p>
+        <p class="meta">C · OpenMP</p>
+        <a class="link" href="https://github.com/CdeCevin/SistemasDitribuidos_U2" target="_blank" rel="noopener">Código →</a>
+      </article>
+      <article class="card small">
+        <h3>U-projects</h3>
+        <p>Mini proyectos universitarios en múltiples lenguajes, incluido Assembly.</p>
+        <p class="meta">Varios lenguajes</p>
+        <a class="link" href="https://github.com/CdeCevin/U-projects" target="_blank" rel="noopener">Código →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="perfil">
+    <h2>Formación y habilidades</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Ingeniero Civil Informático</h3>
+        <p class="meta">Universidad Católica del Maule · 2021–2026</p>
+        <p>Título con Distinción Máxima.</p>
+      </article>
+      <article class="card">
+        <h3>Áreas de experiencia</h3>
+        <p>Arquitectura de sistemas resilientes, integración de inteligencia artificial, testing automatizado (E2E y carga) y metodologías ágiles.</p>
+      </article>
+      <article class="card">
+        <h3>Desarrollo full-stack</h3>
+        <p class="meta">Python · JavaScript · TypeScript · Node.js · Express · React · React Native · Electron · Tailwind CSS · Flask · C · C++ · Java</p>
+      </article>
+      <article class="card">
+        <h3>Bases de datos y entornos</h3>
+        <p class="meta">SQL Server · MySQL · SQLite · MongoDB · Neo4j · SurrealDB · Git · GitHub · Railway · Vercel · Supabase · Cloudflare · Google Cloud</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Hablemos</h2>
+    <p>Estoy abierto a oportunidades de desarrollo, remotas o en la zona centro-sur de Chile.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:Kevin.olivaresf2@gmail.com">Kevin.olivaresf2@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/kevinolivaresfuentes/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/CdeCevin" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Kevin Olivares Fuentes · Hecho a mano con HTML, CSS y un poco de JS.</p>
+</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+(function () {
+  var root = document.documentElement, btn = document.getElementById('theme');
+  try { if (localStorage.getItem('theme') === 'dark') root.setAttribute('data-theme', 'dark'); } catch (e) {}
+  btn.addEventListener('click', function () {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    if (dark) root.removeAttribute('data-theme'); else root.setAttribute('data-theme', 'dark');
+    try { localStorage.setItem('theme', dark ? 'light' : 'dark'); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
